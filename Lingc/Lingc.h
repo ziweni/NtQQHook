@@ -1,0 +1,1 @@
+﻿DWORD WINAPI frida_init(LPVOID lpParamter);
