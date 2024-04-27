@@ -51,4 +51,7 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-Lingc/Release
+build
+/Temp
+/.vs
+/vcpkg_installed
