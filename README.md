@@ -8,7 +8,7 @@
 
 > 使用的库如下
 
-* [frida-gumjs](https://github.com/frida/frida/releases/tag/16.2.1)
+* frida-gumjs
 * jsoncpp
 * curl
 
@@ -33,4 +33,4 @@ vcpkg install jsoncpp:x86-windows jsoncpp:x64-windows curl:x86-windows curl:x64-
 
 方式一、通过导入表修改工具，编译的文件`Lingc.dll`添加到`wrapper.node`的导入项目中，并且移动`Lingc.dll`到`wrapper.node`所在目录(所依赖Dll也需要，如已存在请忽略)
 
-方式二、通过劫持文件，如`version.dll`来实现注入。同样需要移动文件以及其依赖，但需注意并非所有NTQQ的进程都加载`wrapper.node`，需要自行编写代码进行判断。
+方式二、通过劫持文件，如`version.dll`来实现注入。同样需要移动文件以及其依赖，但需注意并非所有NTQQ的进程都加载`wrapper.node`，需要自行编写代码进行判断。具体可[参考](https://github.com/LiteLoaderQQNT/QQNTFileVerifyPatch)
